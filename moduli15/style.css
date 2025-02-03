@@ -76,3 +76,127 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
 }
+
+/* #horizontal-menu{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+}
+
+#horizontal-menu li{
+    float: left;
+}
+
+#horizontal-menu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#horizontal-menu li a:hover:not(.active){
+    background-color: purple;
+}
+
+.active{
+    background-color: blueviolet;
+} */
+
+.navbar{
+    overflow: hidden;
+    background-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown.dropbtn{
+    font-size: 16px;
+    border: none;
+    color: aqua;
+    padding:14px 16px ;
+    background-color: khaki;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: antiquewhite;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: brown;
+    width: 100%;
+left: 0;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.column{
+    float: left;
+    width: 32.28%;
+    padding: 10px;
+    background-color: rgb(223, 192, 130);
+    height: 250px;
+}
+
+.column a{
+    float: none;
+    color: blue;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover{
+    background-color: rgb(188, 94, 168);
+}
+
+
+#vertical-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    position: fixed;
+    height: 100%;
+}
+
+#vertical-menu li a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#vertical-menu li a:active{
+    background-color: purple;
+    color: black;
+}
+
+#vertical-menu li a:hover:not(.active){
+    background-color: rgb(2, 0, 128);
+    color: violet;
+}
