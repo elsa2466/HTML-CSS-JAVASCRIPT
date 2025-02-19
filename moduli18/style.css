@@ -1,4 +1,4 @@
-div#translate{
+/* div#translate{
     width: 200px;
     height: 200px;
     border-radius: 5px;
@@ -27,7 +27,7 @@ div#scale{
     padding: 10px;
     /* transform: scale(2,1);
     transform: scaleX(3); */
-    transform: scaleY(2);
+    /* transform: scaleY(2);
 }
 
 div#skewx{
@@ -39,7 +39,7 @@ div#skewx{
     padding: 10px;
 
     /* transform: skewX(-40deg); */
-    transform: skewY(-40deg);
+    /* transform: skewY(-40deg);
 }
 
 div#rotatex{
@@ -51,6 +51,84 @@ div#rotatex{
     padding: 10px;
     /* transform: rotateY(130deg);
     transform: rotateX(130deg); */
-    transform: rotateZ(130deg);
+    /* transform: rotateZ(130deg);
+ } */
+
+
+
+div{
+    width: 200px;
+    height: 200px;
+    background: pink;
+    transition: background 3s, border-radius 5s;
+    /* transition-timing-function: linear; */
+    transition-timing-function: ease-in-out;
+}
+
+div:hover{
+    background: blueviolet;
+    border-radius: 50%;
+}
+
+#figure_1 img{ 
+    transform:scale(1);
+    transition: .3s ease-in-out;
 
 }
+
+#figure_1 img:hover{
+    transform:scale(1.3);
+}
+
+#figure_2 img{
+    margin-left: 0px;
+    transition: .3s ease-in-out ;
+
+}
+
+#figure_2 img:hover{
+    margin-left: 60px;
+}
+
+#figure_3 img{
+   filter: blur(3px);
+    transition: .3s ease-in-out ;
+
+}
+
+#figure_3 img:hover{
+    filter: blur(0px);
+}
+
+#figure_4 img{
+    filter:grayscale(100%);
+     transition: .3s ease-in-out ;
+ 
+ }
+ 
+ #figure_4 img:hover{
+     filter:grayscale(0)
+ }
+
+ .loader img{
+    margin: 100px;
+
+ }
+
+ .loader img{
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   margin-left: 8px;
+   animation: bounce 8s infinite alternate;
+
+ }
+
+ @keyframes bounce{
+    to{
+        width: 150px;
+        height: 150px;
+        transform: translate(0,-50,0);
+    }
+ }
