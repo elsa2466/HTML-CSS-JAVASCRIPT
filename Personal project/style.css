@@ -1,7 +1,7 @@
 html{
-
-    background-color: #cccccc;
+    background-color: rgb(255, 255, 255);
 }
+
 body {
     margin: 0;
     font-family: 'Times New Roman' , sans-serif;
@@ -10,9 +10,13 @@ body {
 }
 
 #section-1 {
-    background-color: #868686;
-    height: 80px;
+    background-color: rgb(216, 216, 216);
+    height:110px;
+ 
+    font-size: 25px;
+    margin-top: 148px;
     text-align: center;
+   
 }
 
 .container {
@@ -22,16 +26,16 @@ body {
 }
 
 header {
-    padding: 10px;
-    display:flex;
+ padding: 5px;
+    display: flex;
     justify-content: space-around;
-     text-align: center; 
+    text-align: center;
 }
 
 nav ul li {
     display: inline-block;
-    padding:10px 10px;
-   
+    padding: 10px 16px;
+
 }
 
 nav ul li a {
@@ -42,6 +46,57 @@ nav ul li a {
 }
 
 nav ul li.active {
-    background-color: #cccccc;
-    border-radius: 20px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+h1 {
+    /* margin-top: 0px;
+    margin-bottom: 10px; 
+     padding-top: 100px;  */
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+} 
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-top: 60px;  */
+} 
+
+
+.main-heading {
+    margin-top: 85px;
+    text-align: center;
+}
+
+
+
+.main-heading a {
+    text-decoration: none;
+    background-color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius:30px;
+    padding: 14px 25px;
+    color: white;
+}
+
+
+
+.gallery{
+    /* display: grid; */
+    grid-template-columns: repeat(2);
+    gap: 10px;
+    grid-template-rows: repeat(2);
+   
+}
+
+.gallery img{
+    width: 825px;
+    height: 825px;
 }
